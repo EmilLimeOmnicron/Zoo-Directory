@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+//class to modify the ImageViews and TextViews customized for each option.
 public class AnimalDetails extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +25,7 @@ public class AnimalDetails extends MainActivity {
         setDescription(getIntent().getExtras().getString("descr"));
         setImage(getIntent().getExtras().getString("img"));
     }
-
+    
     public void setText(String item) {
         TextView view = (TextView) findViewById(R.id.textView);
         view.setText(getAnimal(item));
